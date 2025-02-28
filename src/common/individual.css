@@ -5,6 +5,7 @@
   justify-content: center;
   gap: 30px;
   max-width: 300px !important;
+  margin-bottom: 20px;
 }
 .pdiv {
   display: flex;
@@ -20,13 +21,13 @@
 .linksection {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
 }
-a {
-    transition: transform 0.3s ease-in-out;
-    font-size: 1.12rem;
+.ap {
+  transition: transform 0.3s ease-in-out;
+  font-size: 1.12rem;
 }
 
-a:hover {
-    transform: scale(1.1);
+.ap:hover {
+  transform: scale(1.1);
 }
