@@ -1,5 +1,4 @@
 import styles from "./ProjectsStyles.module.css";
-
 import ProjectCard from "../../common/ProjectCard";
 import Spotify from "../../assets/spotify_clone.png";
 import Twitter from "../../assets/Twitter_clone.png";
@@ -12,7 +11,7 @@ function Projects() {
         <ProjectCard
           src={Twitter}
           h3="Twitter clone"
-          p="Social media app with posts,likes,comments,followersfollowing and much more"
+          p="Social media app with posts,likes,comments ,followers ,following and much more"
           live_link="https://mern-twitter-clone-siva.onrender.com/"
           code_link="https://github.com/sivaramanand/mern-twitter-clone"
         />

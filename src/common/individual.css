@@ -1,0 +1,32 @@
+.individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  max-width: 300px !important;
+}
+.pdiv {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px !important;
+}
+.projectsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.linksection {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+a {
+    transition: transform 0.3s ease-in-out;
+    font-size: 1.12rem;
+}
+
+a:hover {
+    transform: scale(1.1);
+}

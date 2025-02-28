@@ -15,7 +15,6 @@
     max-width: 500px;
     max-height: 500px;
     border-radius: 50%;
-
   }
 
   span {
@@ -106,10 +105,11 @@
     border-radius: 50%;
   }
   .description {
-padding-left: 20vw;  }
-button{
-  margin-left: 2vw;
-}
+    padding-left: 8vw;
+  }
+  button {
+    margin-left: 2vw;
+  }
 }
 
 @media (width >= 1400px) {
