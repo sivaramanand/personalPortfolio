@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  padding-top: 80px; /* Add space for fixed header */
 }
 
 h1,
