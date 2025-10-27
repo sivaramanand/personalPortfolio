@@ -111,6 +111,8 @@
     display: flex;
     flex-direction: row;
     padding-left: 0vw;
+    position: relative;
+    right: 10px;
   }
 
   .nav li {
