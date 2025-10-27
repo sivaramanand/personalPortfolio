@@ -1,132 +1,134 @@
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .header.dark {
-    background: rgba(30, 30, 30, 0.95);
-    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
 }
 
 .nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 2rem;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
 }
 
 .nav li {
-    margin: 0;
+  margin: 0;
 }
 
 .nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .header.dark .nav a {
-    color: #fff;
+  color: #fff;
 }
 
 .nav a:hover {
-    background: #007acc;
-    color: white;
+  background: #007acc;
+  color: white;
 }
 
 .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    position: absolute;
-    right: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .line {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 3px 0;
-    transition: 0.3s;
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.3s;
 }
 
 .header.dark .line {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    
-    .nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(255, 255, 255, 0.98);
-        backdrop-filter: blur(10px);
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    
-    .header.dark .nav {
-        background: rgba(30, 30, 30, 0.98);
-    }
-    
-    .nav.open {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .nav ul {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 0;
-    }
-    
-    .nav li {
-        width: 100%;
-    }
-    
-    .nav a {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 1rem;
-        border-bottom: 1px solid #eee;
-    }
-    
-    .header.dark .nav a {
-        border-bottom-color: #444;
-    }
-    
-    .nav a:last-child {
-        border-bottom: none;
-    }
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .header.dark .nav {
+    background: rgba(30, 30, 30, 0.98);
+  }
+
+  .nav.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav li {
+    width: 100%;
+  }
+
+  .nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header.dark .nav a {
+    border-bottom-color: #444;
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
 }
